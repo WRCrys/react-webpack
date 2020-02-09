@@ -11,7 +11,9 @@ const Title = React.createClass({
     },
     render: function () {
         return (
-        <h1>Olá {this.props.name + ' ' + this.props.lastname}!</h1>
+        // <h1>Olá {this.props.name + ' ' + this.props.lastname}!</h1>
+        //Abaixo estamos tratando o objeto que foi passado no app.js
+        <h1>Olá {this.props.name + ' ' + this.props.lastname.first + this.props.lastname.last}!</h1>
         )
     }
 })

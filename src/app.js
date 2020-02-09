@@ -13,7 +13,12 @@ const App = React.createClass({
              * htmlFor (React) = for (html)
              */
             <div className='container'>
-                <Title name='Bruce' lastname='Wayne' />
+                {/* Para conseguirmos passar valores sem ser string, pois o JSX espera uma string
+                coloca-se as chaves simbolizando uma expressão e dentro passamos o valor que precisamos
+                como mostra o atributo 'lastname' */}
+                {/* <Title name='Bruce' lastname={Number(9457)} /> */}
+                {/* <Title name='Bruce' lastname={[1,2,3,4,5,6]} /> */}
+                <Title name='Bruce' lastname={{ first: 'Way', last: 'ne' }} />
                 <label htmlFor='input'>Input </label>
                 <input type='text' id='input' arial-hidden={true} />
             </div>
