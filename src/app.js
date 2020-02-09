@@ -5,10 +5,19 @@ import Title from './title'
 // var React = require('react')
 
 const App = React.createClass({
-    render: function() {
-        return <div>
-            <Title name='Bruce Wayne' />
-        </div>
+    render: function () {
+        return (
+            /**
+             * As únicas excessões dos atributos html no react são:
+             * className (React) = class (html)
+             * htmlFor (React) = for (html)
+             */
+            <div className='container'>
+                <Title name='Bruce Wayne' />
+                <label htmlFor='input'>Input </label>
+                <input type='text' id='input' arial-hidden={true} />
+            </div>
+        )
     }
 })
 
