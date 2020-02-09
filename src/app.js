@@ -13,7 +13,7 @@ const App = React.createClass({
              * htmlFor (React) = for (html)
              */
             <div className='container'>
-                <Title name='Bruce Wayne' />
+                <Title name='Bruce' lastname='Wayne' />
                 <label htmlFor='input'>Input </label>
                 <input type='text' id='input' arial-hidden={true} />
             </div>
