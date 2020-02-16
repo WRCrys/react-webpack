@@ -15,8 +15,8 @@ class App extends Component {
                  * !!! Para que o react saiba qual é o nosso elemento do array usamos o atributo key=
                  * pois assim o React consegue ter um rastreio do nosso componente e da mas performance
                  */}
-                {['blue', 'red'].map((square) => (
-                    <Square key={square} color={square} />
+                {['blue', 'red', 'blue'].map((square, index) => (
+                    <Square key={index} color={square} />
                 ))}
                 
             </div>
