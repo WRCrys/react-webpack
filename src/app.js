@@ -8,7 +8,9 @@ import Square from './square'
 class App extends Component {
     render() {
         return (
-            <div className='container'>
+            <div className='container' onClick={(e) => {
+                alert('clicou')
+            }}>
                 {/* <Title name='Bruce' lastname={{ first: 'Way', last: 'ne' }} /> */}
                 {/**
                  * Função do map(): retornar um array e esse array eu posso usar como elemento
@@ -21,9 +23,10 @@ class App extends Component {
                  * o index como key, pois a key não será mais o nome do elemento e sim o index dele dentro do
                  * array.
                  */}
-                {['blue', 'red', 'blue'].map((square, index) => (
+                {/* {['blue', 'red', 'blue'].map((square, index) => (
                     <Square key={index} color={square} />
-                ))}
+                ))} */}
+                <Square />
                 
             </div>
         )
