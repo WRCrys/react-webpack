@@ -2,33 +2,37 @@
 import React, { Component } from 'react'
 // import Title from './title'
 import Square from './square'
+import Button from './button'
 
 // var React = require('react')
 
 class App extends Component {
     render() {
         return (
-            <div className='container' onClick={(e) => {
-                alert('clicou')
-            }}>
-                {/* <Title name='Bruce' lastname={{ first: 'Way', last: 'ne' }} /> */}
-                {/**
-                 * Função do map(): retornar um array e esse array eu posso usar como elemento
-                 * !!! Para que o react saiba qual é o nosso elemento do array usamos o atributo key=
-                 * pois assim o React consegue ter um rastreio do nosso componente e da mas performance
-                 * 
-                 * PROBLEMA AO DUPLICAR A KEY:
-                 * quando duplicamos o react entende somente o primeiro componente assim não renderizando
-                 * o próximo igual, para resolvermos isso nos acrescentamos o index no .map() e passamos
-                 * o index como key, pois a key não será mais o nome do elemento e sim o index dele dentro do
-                 * array.
-                 */}
-                {/* {['blue', 'red', 'blue'].map((square, index) => (
-                    <Square key={index} color={square} />
-                ))} */}
-                <Square />
-                
+            <div className='container'>
+                <Button>Texto</Button>
             </div>
+            // <div className='container' onClick={(e) => {
+            //     alert('clicou')
+            // }}>
+            //     {/* <Title name='Bruce' lastname={{ first: 'Way', last: 'ne' }} /> */}
+            //     {/**
+            //      * Função do map(): retornar um array e esse array eu posso usar como elemento
+            //      * !!! Para que o react saiba qual é o nosso elemento do array usamos o atributo key=
+            //      * pois assim o React consegue ter um rastreio do nosso componente e da mas performance
+            //      * 
+            //      * PROBLEMA AO DUPLICAR A KEY:
+            //      * quando duplicamos o react entende somente o primeiro componente assim não renderizando
+            //      * o próximo igual, para resolvermos isso nos acrescentamos o index no .map() e passamos
+            //      * o index como key, pois a key não será mais o nome do elemento e sim o index dele dentro do
+            //      * array.
+            //      */}
+            //     {/* {['blue', 'red', 'blue'].map((square, index) => (
+            //         <Square key={index} color={square} />
+            //     ))} */}
+            //     <Square />
+                
+            // </div>
         )
     }
 }
