@@ -9,12 +9,26 @@ import SearchButton from './search-button'
 // var React = require('react')
 
 class App extends Component {
+    constructor (){
+        /**
+         * Estado inicial onde definimos na aplicação
+         */
+        super()
+        this.state = {
+            text: 'Bruce'
+        }
+    }
     render() {
         return (
-            <div className='container'>
-                <LikeButton />
-                <SearchButton />
+            <div className='container' onClick={() => this.setState({
+                text: 'Eu queria estar dormindo mas eu não consigo'
+            })}>
+                {this.state.text}
             </div>
+            // <div className='container'>
+            //     <LikeButton />
+            //     <SearchButton />
+            // </div>
             // <div className='container' onClick={(e) => {
             //     alert('clicou')
             // }}>
