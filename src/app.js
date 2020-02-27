@@ -7,24 +7,53 @@ import LikeButton from './like-button'
 import SearchButton from './search-button'
 
 // var React = require('react')
-
+/**
+ * Componente Stateful: é aquele componente que manipula estado
+ * Exemplo: o App.js
+ * Componente Stateless: é aquele componente que não manipula estado; funções puras não tem como manipular estado.
+ * Exemplo: o button.js e square.js
+ */
 class App extends Component {
-    constructor (){
-        /**
-         * Estado inicial onde definimos na aplicação
-         */
+
+    constructor() {
         super()
         this.state = {
-            text: 'Bruce'
+            color: 'grey'
         }
     }
+
+    // constructor (){
+    //     /**
+    //      * Estado inicial onde definimos na aplicação
+    //      */
+    //     super()
+    //     this.state = {
+    //         text: 'Bruce'
+    //     }
+    // }
     render() {
         return (
-            <div className='container' onClick={() => this.setState({
-                text: 'Eu queria estar dormindo mas eu não consigo'
-            })}>
-                {this.state.text}
+            /**
+             * Exemplo de uso de Stateful
+             */
+            <div>
+                <Square color={this.state.color} />
+
+                {['red', 'green', 'yellow', 'blue', 'black'].map((color) => (
+                    <Button
+                    key={color}
+                    handleClick={() => this.setState({color})}>
+                        {color}
+                    </Button>
+                ))}
+
             </div>
+            // <div className='container' onClick={() => this.setState({
+            //     text: 'Eu queria estar dormindo mas eu não consigo'
+            // })}>
+            //     {this.state.text}
+            // </div>
+
             // <div className='container'>
             //     <LikeButton />
             //     <SearchButton />
@@ -48,7 +77,7 @@ class App extends Component {
             //         <Square key={index} color={square} />
             //     ))} */}
             //     <Square />
-                
+
             // </div>
         )
     }
