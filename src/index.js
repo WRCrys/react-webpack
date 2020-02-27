@@ -4,10 +4,6 @@ import { render } from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import App from './app'
 
-// var React = require('react')
-// var ReactDOM = require('react-dom')
-// var Title = require('./app')
-
 const renderApp = (NextApp) => {
     render(
         <AppContainer>

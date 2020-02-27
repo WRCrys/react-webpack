@@ -6,7 +6,8 @@ Repositório com base no curso [react ninja](https://github.com/da2k/curso-react
 <br/>
 
 ### Módulos
-<hr/>
+
+
 - [x] Módulo React + Webpack
 - [ ] Módulo #01
 - [ ] Módulo #02
@@ -16,28 +17,30 @@ Repositório com base no curso [react ninja](https://github.com/da2k/curso-react
 <br/>
 
 ### Comandos Npm
-<hr/>
+
 
 - Para tentar instalar as dependências. 
+
 `npm install`
 
 > Deu ruim e não sabe o que fazer? Vai logo abaixo que lá tem a solução. xD
 
 
 - Rodando o projeto:
+
 `npm start`
 
 <br/>
 
 ### Deu algo errado? Eitaa! São as dependências né?!
-<hr/>
+
 
 [Clica aqui](https://github.com/da2k/curso-reactjs-ninja/blob/master/versions-of-dependencies.md) e acessa o guia direto do curso e resolve esse probleminha xD
 
 <br/>
 
 ### [**IMPORTANTE**] Anotações
-<hr/>
+
 
 Aqui pode-se encontrar todas as [anotações](https://github.com/WRCrys/react-webpack/blob/master/Anotacoes.md) referentes ao curso.
 Pintou a dúvida, vai lá! Ou se for melhor, reveja o vídeo.
