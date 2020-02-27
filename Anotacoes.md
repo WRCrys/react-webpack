@@ -150,4 +150,5 @@ class App extends Component {
             </div>
 ```
 <br/>
-Editado no [Editor.md](https://pandao.github.io/editor.md/en.html)
+Editado no 
+[Editor.md](https://pandao.github.io/editor.md/en.html/)
