@@ -151,4 +151,4 @@ class App extends Component {
 ```
 <br/>
 
-Editado no [Editor.md](https://pandao.github.io/editor.md/en.html/)
+Editado no [Editor.md](https://pandao.github.io/editor.md/en.html)
