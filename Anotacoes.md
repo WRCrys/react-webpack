@@ -111,6 +111,54 @@ Square.defaultProps = {
 
 export default Square 
 ```
+<br/>
+
+### [M1#A16] - A prop children
+<hr/>
+- Exemplo de uso de prop children
+
+`app.js`
+```javascript
+'use strinct'
+
+import React from 'react'
+
+const Button = ({ children }) => (
+	<button>{ children }</button>
+)
+
+export default Button 
+```
+
+<br/>
+
+### [M1#A18] - State
+<hr/>
+
+- Constructor, estado inicial onde definimos na aplicação
+
+`app.js`
+```javascript
+class App extends Component {
+    constructor () {
+        super()
+        this.state = {
+            text: 'Bruce'
+        }
+    }
+    render() {
+        return (
+		            <div className='container' onClick={() => this.setState({
+                text: 'Eu queria estar dormindo mas eu não consigo'
+            })}>
+                {this.state.text}
+            </div>
+			        )
+    }
+```
+
+<br/>
+
 
 ### [M1#A20] - Stateful vs Stateless
 
