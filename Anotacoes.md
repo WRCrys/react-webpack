@@ -57,10 +57,11 @@ const Title = (props) => (
 ``` 
  - Exemplo 02:
 	Utilizando o short render com as propriedades do props	
-	```javascript
+```javascript
 const Title = ({ name, lastname }) => (
-<h1>Olá {`${name} ${lastname.first}${lastname.last}`} </h1>
-)    
+    <h1>Olá {`${name} ${lastname.first}${lastname.last}`} </h1>
+) 
+   
 Title.defaultProps = {
 name: 'Desconhecido',
 lastname: 'Sem sobrenome'
