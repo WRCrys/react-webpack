@@ -56,14 +56,16 @@ const Title = (props) => (
      )
 ``` 
  - Exemplo 02:
- 	Utilizando o short render com as propriedades do props	
-        const Title = ({ name, lastname }) => (
-    	<h1>Olá {`${name} ${lastname.first}${lastname.last}`} </h1>
-        )    
-        Title.defaultProps = {
-        name: 'Desconhecido',
-        lastname: 'Sem sobrenome'
-        }
+	Utilizando o short render com as propriedades do props	
+	```javascript
+const Title = ({ name, lastname }) => (
+<h1>Olá {`${name} ${lastname.first}${lastname.last}`} </h1>
+)    
+Title.defaultProps = {
+name: 'Desconhecido',
+lastname: 'Sem sobrenome'
+}
+```
 <br/>
 
 ### [M1#A13] - Conhecendo a prop key
