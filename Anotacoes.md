@@ -199,4 +199,68 @@ class App extends Component {
 ```
 <br/>
 
+### [M1#A22] - Lifecycle: fluxo de montagem/desmontagem
+
+------------
+###### componentWillMount() 
+- É executado tanto no lado do *front-end* quanto do lado *back-end* (Servidor).
+- É executado antes do render().
+- Não fazer manipulação de DOM, pois ele implica no lado do servidor.
+
+###### componentDidMount() 
+- É executado depois do render().
+- Método que será usado para fazer a manipulação do DOM.
+- É executado **apenas** no lado do *front-end*.
+- Cria
+
+Exemplo:
+`timer.js`
+```javascript
+'use strict'
+
+import React, { Component } from 'react'
+
+class Timer extends Component {
+    constructor() {
+        super()
+        this.state = {
+            time: 0
+        }
+
+        this.timerInterval
+    }
+
+    //Usando o lifecycle
+    componentDidMount() {
+        this.timerInterval = setInterval(
+            () => {
+                this.setState({ time: this.state.time + 1 })
+            }, 1000
+        )
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timerInterval)
+    }
+
+    render() {
+        return (
+            <div>
+                Timer: {this.state.time}
+            </div>
+        )
+    }
+}
+
+export default Timer
+```
+
+###### componentWillUnmount()
+
+- Usado para remover eventos, elementos ou qualquer outra coisa feita manualmente.
+- Destrói
+
+<br/>
+
+
 Editado no [Editor.md](https://pandao.github.io/editor.md/en.html)
