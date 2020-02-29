@@ -309,6 +309,33 @@ export default App
 
 <br/>
 
+### [M1#A27] - propTypes
+
+------------
+
+- Usadas para mapeamento das propriedades passadas para o componente
+
+`button.js`
+```javascript
+'use strinct'
+
+import React from 'react'
+
+const Button = ({ children, handleClick }) => (
+<button onClick={handleClick}>
+    { children }
+</button>
+)
+
+Button.propTypes = {
+    handleClick: React.PropTypes.func.isRequired
+}
+
+export default Button
+```
+<br/>
+
+
 
 
 
