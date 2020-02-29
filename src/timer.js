@@ -13,6 +13,10 @@ class Timer extends Component {
     }
 
     //Usando o lifecycle
+    componentWillReceiveProps(nextProps) {
+        console.log('componentWillReceiveProps', this.props, nextProps)
+    }
+
     componentDidMount() {
         this.timerInterval = setInterval(
             () => {

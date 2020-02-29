@@ -262,5 +262,54 @@ export default Timer
 
 <br/>
 
+### [M1#A23] - Lifecycle: fluxo de atualização
+
+------------
+
+
+
+###### componentWillReceiveProps()
+- Esse método é executado quando um componente recebe alguma propriedade nova.
+
+`app.js`
+```javascript
+class App extends Component {
+
+    constructor() {
+        super()
+        this.state = {
+            time: 0,
+            showTimer: true
+        }
+    }
+render() {
+        return (
+            <div>
+                <Timer time={this.state.time} />
+                <button onClick={() => {
+                    this.setState({ time: this.state.time + 10 })
+                }}>
+                    Change Props
+                </button>
+            </div>
+        )
+    }
+}
+
+export default App
+```
+
+`timer.js`
+
+```javascript
+    componentWillReceiveProps(nextProps) {
+        console.log('componentWillReceiveProps', this.props, nextProps)
+    }
+```
+
+<br/>
+
+
+
 
 Editado no [Editor.md](https://pandao.github.io/editor.md/en.html)
