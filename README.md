@@ -3,7 +3,9 @@
 #### Configurando tudo do zero.
 Repositório com base no curso [react ninja](https://github.com/da2k/curso-reactjs-ninja).
 
+![](https://img.shields.io/github/stars/wrcrys/react-webpack.svg) ![](https://img.shields.io/github/forks/wrcrys/react-webpack.svg) ![](https://img.shields.io/github/issues/wrcrys/react-webpack.svg)
 <br/>
+
 
 ### Módulos
 
@@ -45,3 +47,4 @@ Repositório com base no curso [react ninja](https://github.com/da2k/curso-react
 Aqui pode-se encontrar todas as [anotações](https://github.com/WRCrys/react-webpack/blob/master/Anotacoes.md) referentes ao curso.
 Pintou a dúvida, vai lá! Ou se for melhor, reveja o vídeo.
 
+![](https://i.redd.it/fube7spv6vp11.gif)
