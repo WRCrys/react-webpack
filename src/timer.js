@@ -14,12 +14,16 @@ class Timer extends Component {
 
     //Usando o lifecycle
     componentWillReceiveProps(nextProps) {
-        console.log('componentWillReceiveProps', this.props, nextProps)
+        console.log('componentWillReceiveProps timer', this.props, nextProps)
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        console.log('shouldComponentUpdate', this.props, nextProps, nextState)
+        //console.log('shouldComponentUpdate timer', this.props, nextProps)
         return true
+    }
+
+    componentWillUpdate(nextProps, nextState) {
+        console.log('componentWillUpdate timer', this.props, nextProps)
     }
 
     componentDidMount() {
